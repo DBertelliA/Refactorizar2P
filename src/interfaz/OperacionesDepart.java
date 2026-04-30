@@ -133,7 +133,7 @@ public class OperacionesDepart extends JDialog {
 				}
 			}
 
-			private void InsertarDept(ODB odb) throws NumDepartDuplicado {
+			public void InsertarDept(ODB odb) throws NumDepartDuplicado {
 				int num;
 				String nom;
 				String pob;
@@ -171,7 +171,7 @@ public class OperacionesDepart extends JDialog {
 				}
 			}
 
-			private void borrarDept(ODB odb) {
+			public void borrarDept(ODB odb) {
 				int num;
 				num=Integer.parseInt(txNumDepart.getText());
 				IQuery query=new CriteriaQuery(Departamento.class, Where.equal("dept_no", num));
@@ -208,7 +208,7 @@ public class OperacionesDepart extends JDialog {
 				}
 			}
 
-			private void consulDept(ODB odb) {
+			public void consulDept(ODB odb) {
 				int num;
 				num=Integer.parseInt(txNumDepart.getText());
 				IQuery query=new CriteriaQuery(Departamento.class, Where.equal("dept_no", num));
@@ -239,7 +239,7 @@ public class OperacionesDepart extends JDialog {
 				}
 			}
 
-			private void modifDep(ODB odb) {
+			public void modifDep(ODB odb) {
 				int num;
 				num=Integer.parseInt(txNumDepart.getText());
 				IQuery query=new CriteriaQuery(Departamento.class, Where.equal("dept_no", num));

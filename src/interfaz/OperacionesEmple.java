@@ -23,7 +23,7 @@ import org.neodatis.odb.impl.core.query.criteria.CriteriaQuery;
 
 @SuppressWarnings("serial")
 public class OperacionesEmple extends JDialog {
-	private static class ModifList implements ActionListener {
+	public static class ModifList implements ActionListener {
 		// Modificar registro de la BD.
 		public void actionPerformed(ActionEvent arg0) {
 			int numEmple, numDepar;
@@ -88,7 +88,7 @@ public class OperacionesEmple extends JDialog {
 		}
 	}
 
-	private static class BorrarList implements ActionListener {
+	public static class BorrarList implements ActionListener {
 		// Borrar registro de la BD
 		public void actionPerformed(ActionEvent arg0) {
 			int numEmple;
@@ -113,7 +113,7 @@ public class OperacionesEmple extends JDialog {
 		}
 	}
 
-	private static class ConsulList implements ActionListener {
+	public static class ConsulList implements ActionListener {
 		// Consultar un registro de la BD
 		public void actionPerformed(ActionEvent arg0) {
 			int numEmple;
@@ -145,7 +145,7 @@ public class OperacionesEmple extends JDialog {
 		}
 	}
 
-	private static class InsertarListener implements ActionListener {
+	public static class InsertarListener implements ActionListener {
 		// Insertar un registro a la BD
 		public void actionPerformed(ActionEvent arg0) {
 			int numEmple, numDepar;
