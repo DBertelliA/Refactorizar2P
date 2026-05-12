@@ -1,0 +1,9 @@
+# Ignorar carpetas de compilación y archivos binarios
+bin/
+*.class
+.settings/
+.classpath
+.project
+
+# Ignorar base de datos local
+*.dat
